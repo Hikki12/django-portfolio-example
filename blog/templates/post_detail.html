@@ -1,0 +1,13 @@
+{% extends 'layout.html'%}
+
+{% block content %}
+
+<div class="container">
+    <img class="img-fluid" src="{{ post.image.url }}" alt="{{ post.title }}">
+    <h2 class="text-center mt-4">{{ post.title }}</h2>
+    <h4 class="my-4">{{ post.date }}</h4> 
+
+    <p style="text-align: justify;">{{ post.description | safe }}</p>
+</div>
+
+{% endblock %}
